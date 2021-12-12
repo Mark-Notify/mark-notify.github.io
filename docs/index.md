@@ -1,37 +1,78 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
 
-You can use the [editor on GitHub](https://github.com/Mark-Notify/mark-web.github.io/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+body {
+    background-image:url('https://wallpaperaccess.com/full/187161.jpg');
+    background-size: cover;
+}
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+#container {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 800px;
+    height: 500px;
+}
 
-### Markdown
+#btn_change_size {
+    position: absolute;
+    height: 30px;
+    left: 10px;
+    top: 10px;
+}
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark-Notify</title>
+</head>
 
-```markdown
-Syntax highlighted code block
+<body>
+    <div id="container"></div>
+</body>
 
-# Header 1
-## Header 2
-### Header 3
+</html>
+<script src="https://pchen66.github.io/js/three/three.min.js"></script>
+<script src="https://rawgit.com/pchen66/panolens.js/dev/build/panolens.min.js"></script>
+<script>
+var panorama, viewer, container, infospot;
+var containerBaseWidth = 700;
+var containerBaseHeight = 400;
+var deltaSize = 100;
 
-- Bulleted
-- List
+container = document.querySelector( '#container' );
 
-1. Numbered
-2. List
+panorama = new PANOLENS.ImagePanorama( 'https://pchen66.github.io/Panolens/examples/asset/textures/equirectangular/tunnel.jpg' );
 
-**Bold** and _Italic_ and `Code` text
+infospot = new PANOLENS.Infospot( 350, PANOLENS.DataImage.Info );
+infospot.position.set( 0, 0, -5000 );
+infospot.addHoverText( 'Hello Panolens', 30 );
+panorama.add( infospot );
 
-[Link](url) and ![Image](src)
-```
+viewer = new PANOLENS.Viewer( { container: container } );
+viewer.add( panorama );
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+function changeContainerSize ( width, height ) {
+  viewer.container.style.width = width + "px";
+  viewer.container.style.height = height + "px";
+  viewer.onWindowResize( width, height );
+}
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Mark-Notify/mark-web.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+document.querySelector( '#btn_change_size' ).addEventListener( 'click', function(){
+  var newWidth = containerBaseWidth + (Math.random() - 0.5) * deltaSize;
+  var newHeight = containerBaseHeight + (Math.random() - 0.5) * deltaSize;
+  changeContainerSize( newWidth, newHeight );
+}, false );
+</script>
