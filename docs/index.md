@@ -43,7 +43,7 @@
 
         <div class="form-group">
             <label for="principal">เงินต้น (THB)</label>
-            <input type="number" class="form-control form-control-lg" id="principal" placeholder="กรอกจำนวนเงินต้น" autofocus
+            <input type="number" class="form-control form-control-lg text-center" id="principal" placeholder="กรอกจำนวนเงินต้น" autofocus
                 required>
         </div>
 
