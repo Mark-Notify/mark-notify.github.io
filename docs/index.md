@@ -25,6 +25,13 @@
             font-style: normal;
         }
 
+        h1 {
+            color: #fff;
+            font-family: "Prompt", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+        }
+
         #result {
             margin-top: 20px;
             font-weight: bold;
