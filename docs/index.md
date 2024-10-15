@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,6 +8,8 @@
     <style>
         body {
             margin-top: 50px;
+            background-image:url('https://wallpaperaccess.com/full/187161.jpg');
+            background-size: cover;
         }
         #result {
             margin-top: 20px;
@@ -62,11 +63,12 @@
             const part2 = (ratio2 / totalRatio) * principal;
 
             document.getElementById("result").style.display = "block";
-            document.getElementById("result").innerHTML = 
-                `ผลลัพธ์:<br> 
-                ก้อนที่ 1: ${part1.toFixed(2)} THB<br> 
+            document.getElementById("result").innerHTML =
+                `ผลลัพธ์:<br>
+                ก้อนที่ 1: ${part1.toFixed(2)} THB<br>
                 ก้อนที่ 2: ${part2.toFixed(2)} THB`;
         }
     </script>
+
 </body>
 </html>
