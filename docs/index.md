@@ -38,6 +38,9 @@
             color: #fff;
             font-size: 23px;
         }
+        header {
+            display: none !important;
+        }
     </style>
 </head>
 
