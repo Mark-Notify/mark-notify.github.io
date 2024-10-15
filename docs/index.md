@@ -8,7 +8,9 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <style>
         body {
             margin-top: 50px;
@@ -38,6 +40,7 @@
             color: #fff;
             font-size: 23px;
         }
+
         header {
             display: none !important;
         }
@@ -50,8 +53,8 @@
 
         <div class="form-group">
             <label for="principal">เงินต้น (THB)</label>
-            <input type="number" class="form-control form-control-lg text-center" id="principal" placeholder="กรอกจำนวนเงินต้น" autofocus
-                required>
+            <input type="number" class="form-control form-control-lg text-center" id="principal"
+                placeholder="กรอกจำนวนเงินต้น" autofocus required>
         </div>
 
         <div class="form-group">

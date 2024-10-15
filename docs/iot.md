@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -19,6 +18,10 @@
       /* IE 10+ */
       user-select: none;
       /* Standard syntax */
+    }
+
+    header {
+      display: none !important;
     }
 
     body {
