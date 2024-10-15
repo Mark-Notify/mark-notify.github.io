@@ -1,78 +1,62 @@
-
+<!DOCTYPE html>
 <html lang="en">
-<style>
-    html, body {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  margin: 0;
-}
-
-body {
-    background-image:url('https://wallpaperaccess.com/full/187161.jpg');
-    background-size: cover;
-}
-
-#container {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 800px;
-    height: 500px;
-}
-
-#btn_change_size {
-    position: absolute;
-    height: 30px;
-    left: 10px;
-    top: 10px;
-}
-
-</style>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mark-Notify</title>
+    <title>แบ่งเงินตามอัตราส่วน</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label, input {
+            margin: 5px 0;
+        }
+        #result {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
 </head>
-
 <body>
-    <div id="container"></div>
+    <h1>แบ่งเงินตามอัตราส่วน</h1>
+
+    <label for="principal">เงินต้น (THB):</label>
+    <input type="number" id="principal" placeholder="กรอกจำนวนเงินต้น" required>
+    <br>
+
+    <label for="ratio1">อัตราส่วนก้อนที่ 1:</label>
+    <input type="number" value="6" id="ratio1" placeholder="กรอกอัตราส่วนก้อนที่ 1" required>
+    <br>
+
+    <label for="ratio2">อัตราส่วนก้อนที่ 2:</label>
+    <input type="number" value="4" id="ratio2" placeholder="กรอกอัตราส่วนก้อนที่ 2" required>
+    <br>
+
+    <button onclick="calculate()">คำนวณ</button>
+
+    <div id="result"></div>
+
+    <script>
+        function calculate() {
+            const principal = parseFloat(document.getElementById("principal").value);
+            const ratio1 = parseFloat(document.getElementById("ratio1").value);
+            const ratio2 = parseFloat(document.getElementById("ratio2").value);
+
+            if (isNaN(principal) || isNaN(ratio1) || isNaN(ratio2) || principal <= 0 || ratio1 <= 0 || ratio2 <= 0) {
+                document.getElementById("result").innerHTML = "กรุณากรอกข้อมูลให้ถูกต้อง";
+                return;
+            }
+
+            const totalRatio = ratio1 + ratio2;
+            const part1 = (ratio1 / totalRatio) * principal;
+            const part2 = (ratio2 / totalRatio) * principal;
+
+            document.getElementById("result").innerHTML = 
+                `ผลลัพธ์:<br> 
+                ก้อนที่ 1: ${part1.toFixed(2)} THB<br> 
+                ก้อนที่ 2: ${part2.toFixed(2)} THB`;
+        }
+    </script>
 </body>
-
 </html>
-<script src="https://pchen66.github.io/js/three/three.min.js"></script>
-<script src="https://rawgit.com/pchen66/panolens.js/dev/build/panolens.min.js"></script>
-<script>
-var panorama, viewer, container, infospot;
-var containerBaseWidth = 700;
-var containerBaseHeight = 400;
-var deltaSize = 100;
-
-container = document.querySelector( '#container' );
-
-panorama = new PANOLENS.ImagePanorama( 'https://pchen66.github.io/Panolens/examples/asset/textures/equirectangular/tunnel.jpg' );
-
-infospot = new PANOLENS.Infospot( 350, PANOLENS.DataImage.Info );
-infospot.position.set( 0, 0, -5000 );
-infospot.addHoverText( 'Hello Panolens', 30 );
-panorama.add( infospot );
-
-viewer = new PANOLENS.Viewer( { container: container } );
-viewer.add( panorama );
-
-function changeContainerSize ( width, height ) {
-  viewer.container.style.width = width + "px";
-  viewer.container.style.height = height + "px";
-  viewer.onWindowResize( width, height );
-}
-
-document.querySelector( '#btn_change_size' ).addEventListener( 'click', function(){
-  var newWidth = containerBaseWidth + (Math.random() - 0.5) * deltaSize;
-  var newHeight = containerBaseHeight + (Math.random() - 0.5) * deltaSize;
-  changeContainerSize( newWidth, newHeight );
-}, false );
-</script>
