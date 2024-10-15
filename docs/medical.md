@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,6 +17,13 @@
             font-style: normal;
         }
 
+        h1 {
+            color: #fff;
+            font-family: "Prompt", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+        }
+
         #result {
             margin-top: 20px;
             font-weight: bold;
@@ -31,16 +37,16 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="text-center mb-4">คำนวณปริมาณ Dopamine</h1>
+        <h1 class="text-center mb-4">คำนวณปริมาณยา</h1>
 
         <div class="form-group">
-            <label for="dose">ปริมาณยา Dopamine ที่ต้องใช้ (mg)</label>
+            <label for="dose">ปริมาณยา ที่ต้องใช้ (mg)</label>
             <input type="number" class="form-control form-control-lg text-center" id="dose" placeholder="กรอกปริมาณยา (mg)" required>
         </div>
 
         <div class="form-group">
             <label for="concentration">ความเข้มข้นของยา (mg/ml)</label>
-            <input type="number" class="form-control form-control-lg text-center" id="concentration" value="25" readonly>
+            <input type="number" class="form-control form-control-lg text-center" id="concentration" value="25">
         </div>
 
         <button class="btn btn-primary btn-lg btn-block" onclick="calculate()">คำนวณ</button>
@@ -65,7 +71,7 @@
             document.getElementById("result").style.display = "block";
             document.getElementById("result").innerHTML =
                 `ผลลัพธ์:<br> 
-                ต้องดูดยา Dopamine จำนวน ${volume.toFixed(2)} ml เพื่อให้ได้ ${dose.toLocaleString()} mg`;
+                ต้องดูดยา xxx จำนวน ${volume.toFixed(2)} ml เพื่อให้ได้ ${dose.toLocaleString()} mg`;
         }
     </script>
 </body>
