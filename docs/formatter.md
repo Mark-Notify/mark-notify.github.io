@@ -53,7 +53,8 @@
 
     #editor {
       width: 100%;
-      height: 300px;
+      min-height: 300px;
+      height: calc(100vh - 400px);
       border: 1px solid #ced4da;
       border-radius: 4px;
       padding-top: 20px;
@@ -138,7 +139,7 @@
       const output = window.editor.getValue();
       navigator.clipboard.writeText(output)
         .then(() => {
-          alert('Output copied to clipboard!');
+          // alert('Output copied to clipboard!');
         })
         .catch(err => {
           alert('Failed to copy output: ', err);
