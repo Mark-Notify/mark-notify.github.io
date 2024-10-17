@@ -66,7 +66,7 @@
 
 <body>
   <div class="container">
-    <h1 class="text-center mb-4">Programmer Helper Tool</h1>
+    <!-- <h1 class="text-center mb-4">Programmer Helper Tool</h1> -->
 
     <div class="form-group">
       <label for="inputData">Input Data (JSON or Serialized)</label>
