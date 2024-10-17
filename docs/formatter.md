@@ -73,12 +73,8 @@
       <textarea id="inputData" class="input-area" placeholder="Paste your JSON or serialized data here..."></textarea>
     </div>
 
-    <!-- <button class="btn btn-primary btn-lg btn-block" onclick="processData()">Process</button> -->
-
-    <h3 class="mt-4">Formatted Output</h3>
+    <h3 class="mt-4">Formatted Output </h3><button class="btn btn-secondary btn-sm float-right" onclick="copyToClipboard()">Copy</button>
     <div id="editor"></div>
-
-    <button class="btn btn-secondary btn-lg btn-block" onclick="copyToClipboard()">Copy Output</button>
   </div>
 
   <!-- เพิ่มไลบรารี php-unserialize -->
