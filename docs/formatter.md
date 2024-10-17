@@ -51,10 +51,6 @@
       display: none !important;
     }
 
-    .form-group {
-      margin-bottom: 0;
-    }
-
     #editor {
       width: 100%;
       height: 300px;
