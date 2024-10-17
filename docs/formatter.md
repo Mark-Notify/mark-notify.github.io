@@ -56,7 +56,7 @@
       height: 300px;
       border: 1px solid #ced4da;
       border-radius: 4px;
-      padding-top: 20px;
+      padding-top: 40px;
       padding-bottom: 20px;
       background-color: #1e1e1e;
       /* เพิ่มระยะห่างที่ด้านบน */
