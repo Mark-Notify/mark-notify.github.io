@@ -10,7 +10,7 @@
     rel="stylesheet">
   <style>
     body {
-      margin-top: 50px;
+      margin-top: 35px;
       background-image: url('https://wallpaperaccess.com/full/187161.jpg');
       background-size: cover;
       background-position: center;
