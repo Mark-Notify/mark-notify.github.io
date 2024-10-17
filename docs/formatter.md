@@ -73,7 +73,7 @@
       <textarea id="inputData" class="input-area" placeholder="Paste your JSON or serialized data here..."></textarea>
     </div>
 
-    <button class="btn btn-primary btn-lg btn-block" onclick="processData()">Process</button>
+    <!-- <button class="btn btn-primary btn-lg btn-block" onclick="processData()">Process</button> -->
 
     <h3 class="mt-4">Formatted Output</h3>
     <div id="editor"></div>
