@@ -10,7 +10,7 @@
     rel="stylesheet">
   <style>
     body {
-      margin-top: 35px;
+      /* margin-top: 35px; */
       background-image: url('https://wallpaperaccess.com/full/187161.jpg');
       background-size: cover;
       background-position: center;
@@ -51,12 +51,16 @@
       display: none !important;
     }
 
+    .form-group {
+      margin-bottom: 0;
+    }
+
     #editor {
       width: 100%;
       height: 300px;
       border: 1px solid #ced4da;
       border-radius: 4px;
-      padding-top: 40px;
+      padding-top: 20px;
       padding-bottom: 20px;
       background-color: #1e1e1e;
       /* เพิ่มระยะห่างที่ด้านบน */
@@ -66,14 +70,15 @@
 
 <body>
   <div class="container">
-    <!-- <h1 class="text-center mb-4">Programmer Helper Tool</h1> -->
+    <h1 class="text-center">Programmer Helper Tool</h1>
 
     <div class="form-group">
       <label for="inputData">Input Data (JSON or Serialized)</label>
       <textarea id="inputData" class="input-area" placeholder="Paste your JSON or serialized data here..."></textarea>
     </div>
 
-    <h3 class="mt-4">Formatted Output </h3><button class="btn btn-secondary btn-sm float-right" onclick="copyToClipboard()">Copy</button>
+    <label for="inputData">Formatted Output</label>
+    <button class="btn btn-secondary btn-sm float-right" onclick="copyToClipboard()">Copy</button>
     <div id="editor"></div>
   </div>
 
