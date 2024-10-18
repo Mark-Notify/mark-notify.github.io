@@ -4,9 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Programmer Helper Tool</title>
+  <!-- Basic SEO Meta Tags -->
+  <meta name="description" content="Programmer Helper Tool - Format JSON and Unserialize Data in one place with a user-friendly Monaco editor. Perfect for developers to easily format and process data.">
+  <meta name="keywords" content="Programmer Helper, JSON formatter, Unserialize, Monaco editor, Developer tools, Data processing">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Mark Notify">
+
+  <!-- Open Graph Tags for Social Media -->
+  <meta property="og:title" content="Programmer Helper Tool">
+  <meta property="og:description" content="A tool for developers to format JSON and unserialize data with ease.">
+  <meta property="og:image" content="https://wallpaperaccess.com/full/187161.jpg">
+  <meta property="og:url" content="https://mark-notify.github.io/formatter">
+  <meta property="og:type" content="website">
+
+
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
     rel="stylesheet">
   <style>
     body {

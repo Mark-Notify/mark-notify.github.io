@@ -4,12 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>คำนวณปริมาณ Dopamine</title>
+    <!-- Basic SEO Meta Tags -->
+    <meta name="description" content="Medical Helper Tool - Calculate, manage, and adjust medication dosage with ease. Perfect for healthcare professionals and patients.">
+    <meta name="keywords" content="Medical Helper, Medication dosage calculator, Healthcare tools, Prescription management, Dosage adjustment">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Mark Notify">
+
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content="Medical Helper Tool">
+    <meta property="og:description" content="A tool designed to help calculate and adjust medication dosages.">
+    <meta property="og:image" content="https://example.com/path-to-your-medical-tool-image.jpg">
+    <meta property="og:url" content="https://mark-notify.github.io/medical">
+    <meta property="og:type" content="website">
+
     <!-- เพิ่ม Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <style>
         body {

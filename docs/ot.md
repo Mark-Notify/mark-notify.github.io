@@ -4,6 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OT Calculator</title>
+  <!-- Basic SEO Meta Tags -->
+  <meta name="description" content="OT Calculation Tool - Quickly calculate overtime pay and earnings for accurate payroll management. Simple and efficient for all industries.">
+  <meta name="keywords" content="Overtime calculator, OT pay, Payroll, Earnings, Salary management, Work hours calculation">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Mark Notify">
+
+  <!-- Open Graph Tags for Social Media -->
+  <meta property="og:title" content="OT Calculation Tool">
+  <meta property="og:description" content="A tool designed to calculate overtime pay for accurate payroll and earnings management.">
+  <meta property="og:image" content="https://example.com/path-to-your-ot-tool-image.jpg">
+  <meta property="og:url" content="https://mark-notify.github.io/ot">
+  <meta property="og:type" content="website">
+
   <!-- เพิ่ม Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
