@@ -4,6 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MARK | แบ่งเงินตามอัตราส่วน</title>
+    <!-- Basic SEO Meta Tags -->
+    <meta name="description"
+        content="Mark Notify - A collection of tools, apps, and resources designed to make your digital life easier, from OT calculators to medical tools.">
+    <meta name="keywords" content="Mark Notify, Digital tools, OT calculator, Medical tools, Resources">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Mark Notify">
+
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content="Mark Notify">
+    <meta property="og:description"
+        content="แบ่งเงินตามอัตราส่วน | Explore a variety of tools and resources for simplifying tasks, from calculating overtime to managing medical data.">
+    <meta property="og:image" content="https://example.com/path-to-your-homepage-image.jpg">
+    <meta property="og:url" content="https://mark-notify.github.io/">
+    <meta property="og:type" content="website">
+
     <!-- เพิ่ม Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
