@@ -80,13 +80,13 @@
 
         <div class="form-group">
             <label for="ratio1">อัตราส่วนก้อนที่ 1</label>
-            <input type="number" class="form-control form-control-lg text-center" value="55" id="ratio1"
+            <input type="number" class="form-control form-control-lg text-center" value="6" id="ratio1"
                 placeholder="กรอกอัตราส่วนก้อนที่ 1" required>
         </div>
 
         <div class="form-group">
             <label for="ratio2">อัตราส่วนก้อนที่ 2</label>
-            <input type="number" class="form-control form-control-lg text-center" value="45" id="ratio2"
+            <input type="number" class="form-control form-control-lg text-center" value="4" id="ratio2"
                 placeholder="กรอกอัตราส่วนก้อนที่ 2" required>
         </div>
 
